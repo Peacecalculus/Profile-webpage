@@ -11,13 +11,12 @@
     width: 50%;
     max-width: 1240px;
     margin: 0.3em auto;
-    background-color: rgb(235, 225, 225);
     border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
 }
 
 span{
-    color: rgba(40, 0, 10, 0.863);
+    color: rgba(11, 2, 34, 0.863);
     text-transform: uppercase;
 }
 
@@ -51,10 +50,11 @@ h2{
 
 img{
     padding: 0.2em;
+    animation: alternate;
 }
 
 .header_img{
-    width: 85%;
+    width: 90%;
     height: auto;
     object-fit: cover;
     border-bottom: 3px solid rgb(88, 57, 57);
@@ -70,6 +70,14 @@ img{
     padding: 2em;
 }
 
+.bottom_section div{
+    margin: .2em;
+    padding: 1.2em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
 .aside_lt{
     margin-inline: 2em;
     margin-right: 2em;
@@ -81,14 +89,24 @@ img{
     margin-right: 2em; 
 }
 
+.header_img:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.bottom_section div:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+
+}
+
 @media (106px <= width <= 600px) {
-  /* This applies to screens between 106px and 600px */
   .top_section{
     grid-template-columns: 1fr;
     text-align: center;
     margin-block-start: 1em;
     padding: 0.5em 1em 0.5em 1em;
-  }
+    }
     .header_img{
         width: 60%;
         height: auto;
