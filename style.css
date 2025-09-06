@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@400;700\&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' sans-serif;
+}
+
+.container{
+    width: 50%;
+    max-width: 1240px;
+    margin: 0.3em auto;
+    background-color: rgb(235, 225, 225);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+span{
+    color: rgba(40, 0, 10, 0.863);
+    text-transform: uppercase;
+}
+
+.aside_lt span{
+    color: inherit;
+    text-transform: none;
+}
+
+.header_content{
+    margin-block-start: 1em;
+    margin-left: 0.2em; 
+}
+
+.top_section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-block-start: 1.5em;
+    padding: 0.5em 1em 0.5em 2em;
+}
+
+h1{
+    margin-block-start: .2em;
+    margin-block-end: .5em;
+    color: blueviolet;
+}
+
+h2{
+    margin-block-end: .5em;
+    color: blueviolet;
+}
+
+img{
+    padding: 0.2em;
+}
+
+.header_img{
+    width: 85%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 3px solid rgb(88, 57, 57);
+    border-radius: 50%;
+    grid-row: -3/1;
+}
+
+.bottom_section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 10px;
+    padding: 2em;
+}
+
+.aside_lt{
+    margin-inline: 2em;
+    margin-right: 2em;
+}
+
+
+.aside_rt{
+    margin-left: 0.1em;
+    margin-right: 2em; 
+}
+
+@media (106px <= width <= 600px) {
+  /* This applies to screens between 106px and 600px */
+  .top_section{
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin-block-start: 1em;
+    padding: 0.5em 1em 0.5em 1em;
+  }
+    .header_img{
+        width: 60%;
+        height: auto;
+        border-bottom: 3px solid rgb(88, 57, 57);
+        border-radius: 50%;
+        grid-row: -3/1;
+        margin: 0 auto;
+    }
+    .bottom_section{
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 1em;
+    }
+    .aside_lt, .aside_rt{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .aside_lt ol{
+        list-style-position: inside;
+        padding-inline-start: 0;
+    }
+}
